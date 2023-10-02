@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "learning-shop"
+client_id = "e85df9c6b2000369330cc4377b1f5669"
+application_url = "https://seen-experience-opposition-washer.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://seen-experience-opposition-washer.trycloudflare.com/auth/callback",
+  "https://seen-experience-opposition-washer.trycloudflare.com/auth/shopify/callback",
+  "https://seen-experience-opposition-washer.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-359a18b0.myshopify.com"
